@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multa</title>
+<link rel="stylesheet" href="multa.css">
+</head>
+
+<body>
+
+    <div id="tela">
+
+        <h1>Sistema de multa</h1>
+
+        <!-- Quando algum veículo ultrapassar 80 km por hora a cor muda -->
+
+        <p id="pP">Alerta de alta velocidade, Velocidade máxima 90Km/h</p>
+        <input type="number" name="vel" id="vel" placeholder="Velocidade obtida de um radar"> <br>
+        
+
+        <div id="resCor"> 
+            <p id="p"> Velocidade Controlada </p>
+        </div> <br>
+
+        <input id="atualizar" onclick="clicar()" type="button" value="Atualizar">
+        <!-- botão usado apenas para uma atualização manual -->
+
+    </div>
+
+<script src="multa.js"></script>
+</body>
+
+</html>
